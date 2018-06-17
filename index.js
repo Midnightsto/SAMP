@@ -1090,4 +1090,4 @@ member.removeRole(role).catch(console.error);
 
 });
 
-client.login('NDUwMzg1ODU0MDAzODA2MjA5.DgKSZg.UROmmVy3V8x64BJB51F7iNeC3NQ');
+client.login(config.token);
