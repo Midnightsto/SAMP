@@ -122,6 +122,8 @@ client.on("message", async message => {
   
   if(command === "purge") {
     // This command removes all messages from all users in the channel, up to 100.
+     if(!message.member.roles.some(r=>["Dev"].includes(r.name)) )
+      return message.reply("Sorry, you don't have permissions to use this!");
     
     // get the delete count, as an actual number.
     const deleteCount = parseInt(args[0], 10);
