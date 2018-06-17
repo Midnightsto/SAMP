@@ -1088,7 +1088,19 @@ member.addRole(role).catch(console.error);
 // Remove a role!
 member.removeRole(role).catch(console.error);
   }
-
+if(message.content === "naruto"){
+    const rando_imgs = [
+      'https://media.giphy.com/media/TRdV7Bk5JVdVm/giphy.gif',
+      'https://media.giphy.com/media/4gsjHZMPXdlGo/giphy.gif',
+      'https://media.giphy.com/media/r5IgwkL8JUfRu/giphy.gif',
+      'https://media.giphy.com/media/2y98KScHKeaQM/giphy.gif',
+      'https://media.giphy.com/media/DoHRW685Y1gru/giphy.gif',
+      'https://media.giphy.com/media/ohT97gdpR40vK/giphy.gif',
+      ]
+      return message.channel.send(`Here is your naruto gif`, {
+        file: rando_imgs[Math.floor(Math.random() * rando_imgs.length)]
+    });
+  }
 });
 
 client.login(config.token);
