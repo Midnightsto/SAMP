@@ -1,0 +1,21 @@
+{
+  "name": "samp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discorg",
+    "bot"
+  ],
+  "author": "Midnight Storm",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "random-cat": "^1.0.1",
+    "request": "^2.87.0",
+    "snekfetch": "^4.0.2"
+  }
+}
