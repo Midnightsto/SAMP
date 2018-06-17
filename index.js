@@ -1088,7 +1088,7 @@ member.addRole(role).catch(console.error);
 // Remove a role!
 member.removeRole(role).catch(console.error);
   }
-if(message.content === "naruto"){
+if(command === "naruto"){
     const rando_imgs = [
       'https://media.giphy.com/media/TRdV7Bk5JVdVm/giphy.gif',
       'https://media.giphy.com/media/4gsjHZMPXdlGo/giphy.gif',
