@@ -1068,7 +1068,7 @@ if(command === "tg!furuta"  ){
     message.delete();
   }
   if(command === "cat"){
-    request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
+    request.get('http://thecatapi.com/api/images/get?format=src&type=gif', {
 
 }, function(error, response, body) {
 	if(!error && response.statusCode == 200) {
