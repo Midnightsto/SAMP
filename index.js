@@ -16,6 +16,7 @@ const config = require("./config.json");
 // config.token contains the bot's token
 // config.prefix contains the message prefix.
 client.on('guildMemberAdd', member => {
+	if(guild.id === '451453974164406293')
    return member.send("Welcome to the Official Nin-mmo Discord Server ${member} please enjoy your stay. Be sure to read #rules and #general-info. For more info on the game, check #game-description. Theres also a channel for community feedback, where you can help the creation of the game by supplying feedback and ideas, called #community-feedback.");
 });
 client.on("ready", () => {
@@ -1100,6 +1101,192 @@ if(command === "naruto"){
       return message.channel.send(`Here is your naruto gif`, {
         file: rando_imgs[Math.floor(Math.random() * rando_imgs.length)]
     });
+  }
+	  if(command === "tg!houji"  ){
+    if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+      return message.reply("Sorry, you are not a manga reader")
+  
+  
+    return message.channel.send({embed: {
+     color: 3447003,
+     author: {
+       name: client.user.username,
+       icon_url: client.user.avatarURL
+     },
+     title: " Kousuke Houji",
+     thumbnail: {
+       "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/0/07/Houji_with_tears_in_his_eyes%2C_orders_to_attack_Takizawa.png"
+     },
+     url: "http://tokyoghoul.wikia.com/wiki/Kousuke_Houji",
+     description: "Here are the details you requested",
+     fields: [{
+         name: "Affiliations:CCG,S3 Squad",
+         value: "Name:Kousuke Houji \nJapanese name:	法寺 項介 （ほうじ こうすけ\\nSpecies: Human \nGender:Male \n Ward:5th Ward 20th Ward (Formerly\nRank:Associate Special Class (Tokyo Ghoul) Special Class (Tokyo Ghoul: re)\nQuinque:Hollow (Ukaku), Chi She (Koukaku, Rate SS), Iitsuu (Koukaku, Rate A+)"
+       }
+       
+     ],
+     timestamp: new Date(),
+     footer: {
+       icon_url: client.user.avatarURL,
+       text: "© TG Fan"
+     }
+   }
+  });
+  }
+  if(command === "tg!kureo "  ){
+    if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+      return message.reply("Sorry, you are not a manga reader")
+  
+  
+    return message.channel.send({embed: {
+     color: 3447003,
+     author: {
+       name: client.user.username,
+       icon_url: client.user.avatarURL
+     },
+     title: " Kureo Mado",
+     thumbnail: {
+       "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/c/ce/Kureo_Mado.png"
+     },
+     url: "http://tokyoghoul.wikia.com/wiki/Kureo_Mado",
+     description: "Here are the details you requested",
+     fields: [{
+         name: "Affiliations:CCG",
+         value: "Name:Kureo Mado \nJapanese name:		真戸 呉緒 （まど くれお）\n Alias Quinque Fanatic, Mad Mado\nSpecies: Human \nGender:Male \n Ward:20th Ward (Formerly\nRank:First Class \nUnnamed quinque (Anime only), Fueguchi One, (Rinkaku) Fueguchi Two (Koukaku), Kura (Koukaku), 19 others"
+       }
+       
+     ],
+     timestamp: new Date(),
+     footer: {
+       icon_url: client.user.avatarURL,
+       text: "© TG Fan"
+     }
+   }
+  });
+  }
+  if(command === "tg!iwao "  ){
+    if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+      return message.reply("Sorry, you are not a manga reader")
+  
+  
+    return message.channel.send({embed: {
+     color: 3447003,
+     author: {
+       name: client.user.username,
+       icon_url: client.user.avatarURL
+     },
+     title: " Iwao Kuroiwa",
+     thumbnail: {
+       "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/1/1d/Iwaokuroiware.png"
+     },
+     url: "http://tokyoghoul.wikia.com/wiki/Iwao_Kuroiwa",
+     description: "Here are the details you requested",
+     fields: [{
+         name: "Affiliations:CCG, S3 Squad (Formerly), Kuroiwa Squad - Squad Leader",
+         value: "Name:Iwao Kuroiwa \nJapanese name:		黒磐 巌 （くろいわ いわお\n Alias Iwaccho\nSpecies: Human \nGender:Male \n Ward:13th Ward (Formerly\nRank:Special Class \nQuinque:Arata series: Arata proto, Arata (Koukaku), Kuroiwa Special (Rinkaku, Rate S)"
+       }
+       
+     ],
+     timestamp: new Date(),
+     footer: {
+       icon_url: client.user.avatarURL,
+       text: "© TG Fan"
+     }
+   }
+  });
+  }
+  if(command === "tg!takeomi "  ){
+    if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+      return message.reply("Sorry, you are not a manga reader")
+  
+  
+    return message.channel.send({embed: {
+     color: 3447003,
+     author: {
+       name: client.user.username,
+       icon_url: client.user.avatarURL
+     },
+     title: " Takeomi Kuroiwa",
+     thumbnail: {
+       "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/3/36/Kuroiwa_Takeomi.png"
+     },
+     url: "http://tokyoghoul.wikia.com/wiki/Takeomi_Kuroiwa",
+     description: "Here are the details you requested",
+     fields: [{
+         name: "AffiliationsCCG Hirako Squad (until :re Ch. 34) Itou Squad (after :re Ch. 34)",
+         value: "Name:Takeomi Kuroiwa \nJapanese name:	黒磐 武臣 （くろいわ たけおみ）\n Alias Bujin\nSpecies: Human \nGender:Male \n Ward:1st Ward (Formerly\nRank:Rank 2 (until :re Ch. 32) Rank 1 (after :re Ch. 32) \nQuinque:Tsunagi <hard> (Bikaku, Rate C)"
+       }
+       
+     ],
+     timestamp: new Date(),
+     footer: {
+       icon_url: client.user.avatarURL,
+       text: "© TG Fan"
+     }
+   }
+  });
+  }
+  if(command === "tg!marude "  ){
+    if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+      return message.reply("Sorry, you are not a manga reader")
+  
+  
+    return message.channel.send({embed: {
+     color: 3447003,
+     author: {
+       name: client.user.username,
+       icon_url: client.user.avatarURL
+     },
+     title: " Itsuki Marude",
+     thumbnail: {
+       "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/f/f0/Marude_1.png"
+     },
+     url: "http://tokyoghoul.wikia.com/wiki/Itsuki_Marude",
+     description: "Here are the details you requested",
+     fields: [{
+         name: "AffiliationsCCG S3 Squad (Defected)",
+         value: "Name:Itsuki Marude \nJapanese name:	丸手 斎 （まるで いつき\nSpecies: Human \nGender:Male \n Ward:1st Ward (Formerly\nRank:Rank 2 (Formerly) Special Class (Formerly)\n"
+       }
+       
+     ],
+     timestamp: new Date(),
+     footer: {
+       icon_url: client.user.avatarURL,
+       text: "© TG Fan"
+     }
+   }
+  });
+  }
+  if(command === "tg!hide "  ){
+    if(!message.member.roles.some(r=>["Manga Reader"].includes(r.name)) )
+      return message.reply("Sorry, you are not a manga reader")
+  
+  
+    return message.channel.send({embed: {
+     color: 3447003,
+     author: {
+       name: client.user.username,
+       icon_url: client.user.avatarURL
+     },
+     title: " Hideyoshi Nagachika",
+     thumbnail: {
+       "url": "https://vignette.wikia.nocookie.net/tokyoghoul/images/f/f0/Marude_1.png"
+     },
+     url: "http://tokyoghoul.wikia.com/wiki/Hideyoshi_Nagachika",
+     description: "Here are the details you requested",
+     fields: [{
+         name: "Affiliations:Kamii University (Formerly) Occult Research Club (Formerly) CCG",
+         value: "Name:Hideyoshi Nagachika\nJapanese name:	永近 英良 （ながちか ひでよし）\n Alias Hide,Scarecrow\nSpecies: Human \nGender:Male \n Ward:20th Ward (Formerly\nRating:C\n"
+       }
+       
+     ],
+     timestamp: new Date(),
+     footer: {
+       icon_url: client.user.avatarURL,
+       text: "© TG Fan"
+     }
+   }
+  });
   }
 });
 
