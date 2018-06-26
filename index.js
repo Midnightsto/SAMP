@@ -16,7 +16,6 @@ const config = require("./config.json");
 // config.token contains the bot's token
 // config.prefix contains the message prefix.
 client.on('guildMemberAdd', member => {
-	if(guild.id === '451453974164406293')
    return member.send("Welcome to the Official Nin-mmo Discord Server,please enjoy your stay. Be sure to read <#453066225149411328> and <#453068193842593802>. For more info on the game, check <#453247301813796874>. Theres also a channel for community feedback, where you can help the creation of the game by supplying feedback and ideas, called <#453072339018711042> .");
 });
 client.on("ready", () => {
