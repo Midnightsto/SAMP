@@ -1,11 +1,10 @@
 {
   "name": "samp",
   "version": "1.0.0",
-  "description": " hhhh",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "discorg",
@@ -14,9 +13,17 @@
   "author": "Midnight Storm",
   "license": "MIT",
   "dependencies": {
+    "better-sqlite3": "^4.1.4",
+    "canvas": "^1.6.11",
+    "cron": "^1.3.0",
+    "discord-eco": "0.0.10",
+    "discord-musicbot": "^0.1.5",
+    "discord-spoiler-bot": "^2.0.6",
     "discord.js": "^11.3.2",
+    "node-gyp": "^3.7.0",
     "random-cat": "^1.0.1",
     "request": "^2.87.0",
-    "snekfetch": "^4.0.2"
+    "snekfetch": "^4.0.2",
+    "sqlite": "^2.9.2"
   }
 }
