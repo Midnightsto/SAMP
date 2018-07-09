@@ -18,8 +18,6 @@ const SpoilerBot = require('discord-spoiler-bot');
 let config = {
     token: 'NDYxOTc4MDE2NzEzNTM5NjA1.DhbKEg.4LXerR7BmmNQI1cNfxCr1RrGCyw',
 };
- 
-let bot = new SpoilerBot(config);
 bot.connect();
 const config = {
   // these 3 are always required.
