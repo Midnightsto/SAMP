@@ -14,7 +14,6 @@
   "author": "Midnight Storm",
   "license": "MIT",
   "dependencies": {
-    "better-sqlite3": "^4.1.4",
     "cron": "^1.3.0",
     "discord-eco": "0.0.10",
     "discord-musicbot": "^0.1.5",
