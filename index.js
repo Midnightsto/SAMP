@@ -51,4 +51,4 @@ if( swearWords.some(word => message.content.includes(word)) ) {
 
 });
 
-client.login("NDY4NDAyNTA3NzQ0NTQyNzQw.Di4pWw.yG_f_jq1p1troWq6XecfDKxyc3");
+client.login("NDY4NDAyNTA3NzQ0NTQyNzQw.Di4raw.XV9rz5wHdVASB4A9IK9TOTN7SOU");
