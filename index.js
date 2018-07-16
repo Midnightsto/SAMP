@@ -51,4 +51,4 @@ if( swearWords.some(word => message.content.includes(word)) ) {
 
 });
 
-client.login("procces.env.TOKEN");
+client.login('process.env.TOKEN');
