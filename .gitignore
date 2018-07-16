@@ -9,7 +9,6 @@
 *.vi
 *~
 *.sass-cache
-*.json
 
 # OS or Editor folders
 .DS_Store
@@ -80,4 +79,5 @@ jspm_packages
 config.json
 # config file
 config.json
-
+# Smh
+.json
