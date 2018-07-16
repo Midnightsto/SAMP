@@ -4,7 +4,6 @@ const fs = require("fs")
 const prefix = "/";
 const client = new Discord.Client()
 fs.readdir("./cmds/", (err, files) => {
-  if(!message.content.startsWith(prefix)) return;
   if (err) return console.error(err);
   files.forEach(file => {
     let eventFunction = require(`./cmds/${file}`);
