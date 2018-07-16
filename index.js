@@ -51,4 +51,4 @@ if( swearWords.some(word => message.content.includes(word)) ) {
 
 });
 
-client.login('config.TOKEN');
+client.login('NDY4NDAyNTA3NzQ0NTQyNzQw.Di4pWw.yG_f_jq1p1troWq6XecfDKxyc3');
