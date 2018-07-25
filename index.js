@@ -37,7 +37,13 @@ client.on("message",  async message => {
     console.error(err)
   }
   // Let's go with a few common example commands! Feel free to delete or change those.
-  
+  if (message.content === "$loop") { 
+        var interval = setInterval (function () {
+            // use the message's channel (TextChannel) to send a new message
+            message.channel.send("<@356489931633459200>")
+            .catch(console.error); // add error handling here
+        }, 1 * 1000); 
+    }
   const swearWords = ["darn", "shucks", "frak", "shite"];
 if( swearWords.some(word => message.content.includes(word)) ) {
   message.delete();
