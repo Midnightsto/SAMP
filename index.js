@@ -31,7 +31,6 @@ client.on("message",  async message => {
   const command = args.shift().toLowerCase();
   try {
       if(message.author.bot) return;
-    if (!message.content.StartsWith(prefix)) return;
     let commandFile = require(`./cmds/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
