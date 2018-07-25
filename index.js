@@ -30,7 +30,8 @@ client.on("message",  async message => {
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   try {
- 
+      if(message.author.bot) return;
+    if (!message.content.StartsWith(prefix)) return;
     let commandFile = require(`./cmds/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
