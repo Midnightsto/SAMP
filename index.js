@@ -55,4 +55,4 @@ if( swearWords.some(word => message.content.includes(word)) ) {
 
 });
 
-client.login("NDY4NDAyNTA3NzQ0NTQyNzQw.Di4raw.XV9rz5wHdVASB4A9IK9TOTN7SOU");
+client.login("env.TOKEN");
