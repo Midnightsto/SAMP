@@ -52,7 +52,7 @@ client.on("message",  async message => {
                        console.log('error!');
                        }
                      });
-      }, 1 * 3,600,000); 
+      } 1 * 3,600,000); 
     }
   const swearWords = ["darn", "shucks", "frak", "shite"];
 if( swearWords.some(word => message.content.includes(word)) ) {
