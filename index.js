@@ -17,7 +17,7 @@ client.on("ready", () => {
   client.user.setActivity(`Playing with pings`);
 });
 const request = require('request');
-request.get('http://thecatapi.com/api/images/get?format=src&type=gif'
+request.get('http://thecatapi.com/api/images/get?format=src&type=gif')
 client.on("message",  async message => {
   if(message.author.bot) return;
   
