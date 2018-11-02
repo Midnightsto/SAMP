@@ -51,7 +51,7 @@ client.on("message",  async message => {
                   } catch (e) {
                        console.log('error!');
                        }
-                     };
+                     });
       }, 1 * 3,600,000); 
     }
   const swearWords = ["darn", "shucks", "frak", "shite"];
