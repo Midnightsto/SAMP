@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const {get} = require("snekfetch");
 
 const fs = require("fs")
 const prefix = "/";
