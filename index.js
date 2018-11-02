@@ -55,4 +55,4 @@ if( swearWords.some(word => message.content.includes(word)) ) {
 
 });
 
-client.login("env.TOKEN");
+client.login("process.env.BOT_TOKEN");
