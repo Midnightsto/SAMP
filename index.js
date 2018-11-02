@@ -39,9 +39,11 @@ client.on("message",  async message => {
   } catch (err) {
     console.error(err)
   }
+	const request = require('request');
+request.get('http://thecatapi.com/api/images/get?format=src&type=gif')
   // Let's go with a few common example commands! Feel free to delete or change those.
    if (message.content === "$loop") { 
-      var interval = setInterval (function ()
+      var interval = setInterval (function () {
 				  message.channel.send(response.request.uri.href);
       }, 1 * 3,600,000); 
     }
