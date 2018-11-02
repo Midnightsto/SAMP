@@ -16,7 +16,8 @@ client.on("ready", () => {
 
   client.user.setActivity(`Playing with pings`);
 });
-
+const request = require('request');
+request.get('http://thecatapi.com/api/images/get?format=src&type=gif'
 client.on("message",  async message => {
   if(message.author.bot) return;
   
@@ -29,7 +30,8 @@ client.on("message",  async message => {
   // args = ["Is", "this", "the", "real", "life?"]
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-const request = require('request');
+
+	
   try {
       if(message.author.bot) return;
     let commandFile = require(`./cmds/${command}.js`);
@@ -39,17 +41,9 @@ const request = require('request');
   }
   // Let's go with a few common example commands! Feel free to delete or change those.
    if (message.content === "$loop") { 
-      var interval = setInterval (function () request.get('http://thecatapi.com/api/images/get?format=src&type=gif', {
-
-}, function(error, response, body) {
-	if(!error && response.statusCode == 200) {
-		message.channel.send(response.request.uri.href);
-	} else {
-		console.log(error);
-	}
-})
-}
-      }, 1 * 1000); 
+      var interval = setInterval (function ()
+				  message.channel.send(response.request.uri.href);
+      }, 1 * 3,600,000); 
     }
   const swearWords = ["darn", "shucks", "frak", "shite"];
 if( swearWords.some(word => message.content.includes(word)) ) {
