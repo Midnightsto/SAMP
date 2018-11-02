@@ -49,7 +49,7 @@ client.on("message",  async message => {
                  console.log('random cat picture');
                   }
                   };
-                     }
+             
       }, 1 * 3,600,000); 
     }
   const swearWords = ["darn", "shucks", "frak", "shite"];
