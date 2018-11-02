@@ -47,7 +47,7 @@ client.on("message",  async message => {
            get('https://random.cat/meow').then(response => {
                  message.channel.send({files: [{attachment: response.body.file, name: `cat.${response.body.file.split('.')[2]}`}]});
                  console.log('random cat picture');
-                  }
+                  })
                   };
              
       }, 1 * 3,600,000); 
