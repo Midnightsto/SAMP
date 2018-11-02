@@ -38,8 +38,17 @@ client.on("message",  async message => {
   }
   // Let's go with a few common example commands! Feel free to delete or change those.
    if (message.content === "$loop") { 
-      var interval = setInterval (function () {
-        message.channel.send("@356489931633459200")
+      var interval = setInterval (function () const request = require('request');
+request.get('http://thecatapi.com/api/images/get?format=src&type=gif', {
+
+}, function(error, response, body) {
+	if(!error && response.statusCode == 200) {
+		message.channel.send(response.request.uri.href);
+	} else {
+		console.log(error);
+	}
+})
+}
       }, 1 * 1000); 
     }
   const swearWords = ["darn", "shucks", "frak", "shite"];
