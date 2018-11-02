@@ -43,16 +43,11 @@ client.on("message",  async message => {
   // Let's go with a few common example commands! Feel free to delete or change those.
    if (message.content === "$loop") { 
       var interval = setInterval (function () {
-	try {
            get('https://random.cat/meow').then(response => {
                  message.channel.send({files: [{attachment: response.body.file, name: `cat.${response.body.file.split('.')[2]}`}]});
                  console.log('random cat picture');
-                  })
+                  });
                   
-             catch (e) {
-                       console.log('error!');
-                       }
-	};
       }, 1 * 3,600,000); 
     }
   const swearWords = ["darn", "shucks", "frak", "shite"];
