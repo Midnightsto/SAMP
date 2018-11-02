@@ -48,7 +48,7 @@ client.on("message",  async message => {
                  message.channel.send({files: [{attachment: response.body.file, name: `cat.${response.body.file.split('.')[2]}`}]});
                  console.log('random cat picture');
                   })
-                  } catch (e) {
+                  }) catch (e) {
                        console.log('error!');
                        }
                      }
